@@ -1,0 +1,39 @@
+GPU Device 0: "Tesla M2090" with compute capability 2.0
+
+CURAND normal RNG  execution time (ms): 22.572800,  samples/sec: 8.505812e+07 
+random variable: 0
+random variable: 32
+random variable: 2
+random variable: 4
+random variable: 34
+random variable: 6
+random variable: 8
+random variable: 36
+random variable: 10
+random variable: 12
+random variable: 38
+random variable: 14
+random variable: 16
+random variable: 40
+random variable: 18
+random variable: 20
+random variable: 42
+random variable: 22
+random variable: 24
+random variable: 44
+random variable: 26
+random variable: 28
+random variable: 46
+random variable: 30
+random variable: 48
+random variable: 50
+random variable: 52
+random variable: 54
+random variable: 56
+random variable: 58
+random variable: 60
+random variable: 62
+Monte Carlo kernel execution time (ms): 1.320160 
+
+Average value and standard deviation of error  =           nan           nan
+

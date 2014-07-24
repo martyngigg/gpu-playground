@@ -1,0 +1,19 @@
+
+INC	:= -I$(CUDA_HOME)/include -I.
+LIB	:= -L$(CUDA_HOME)/lib64 -lcudart -lcurand
+
+NVCCFLAGS	:= -lineinfo -arch=sm_20 --ptxas-options=-v --use_fast_math -g
+
+all: prac2 prac2-vers2 prac2-average
+
+prac2:	prac2.cu Makefile
+	nvcc prac2.cu -o prac2 $(INC) $(NVCCFLAGS) $(LIB)
+
+prac2-vers2:	prac2-vers2.cu Makefile
+	nvcc prac2-vers2.cu -o prac2-vers2 $(INC) $(NVCCFLAGS) $(LIB)
+
+prac2-average:	prac2-average.cu Makefile
+	nvcc prac2-average.cu -o prac2-average $(INC) $(NVCCFLAGS) $(LIB)
+
+clean:
+	rm -f prac2 prac2-vers2 prac2-average

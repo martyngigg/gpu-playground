@@ -1,0 +1,71 @@
+GPU Device 0: "Tesla M2090" with compute capability 2.0
+
+CURAND normal RNG  execution time (ms): 22.011648,  samples/sec: 8.722654e+07 
+random variable v1: 0
+random variable v1: 16
+random variable v1: 1
+random variable v1: 2
+random variable v1: 17
+random variable v1: 3
+random variable v1: 4
+random variable v1: 18
+random variable v1: 5
+random variable v1: 6
+random variable v1: 19
+random variable v1: 7
+random variable v1: 8
+random variable v1: 20
+random variable v1: 9
+random variable v1: 10
+random variable v1: 21
+random variable v1: 11
+random variable v1: 12
+random variable v1: 22
+random variable v1: 13
+random variable v1: 14
+random variable v1: 23
+random variable v1: 15
+random variable v1: 24
+random variable v1: 25
+random variable v1: 26
+random variable v1: 27
+random variable v1: 28
+random variable v1: 29
+random variable v1: 30
+random variable v1: 31
+random variable v2: 0
+random variable v2: 16
+random variable v2: 1
+random variable v2: 2
+random variable v2: 17
+random variable v2: 3
+random variable v2: 4
+random variable v2: 18
+random variable v2: 5
+random variable v2: 6
+random variable v2: 19
+random variable v2: 7
+random variable v2: 8
+random variable v2: 20
+random variable v2: 9
+random variable v2: 10
+random variable v2: 21
+random variable v2: 11
+random variable v2: 12
+random variable v2: 22
+random variable v2: 13
+random variable v2: 14
+random variable v2: 23
+random variable v2: 15
+random variable v2: 24
+random variable v2: 25
+random variable v2: 26
+random variable v2: 27
+random variable v2: 28
+random variable v2: 29
+random variable v2: 30
+random variable v2: 31
+Monte Carlo kernel execution time (ms): 1.961280 
+
+Average value and standard deviation of error  =           nan           nan
+

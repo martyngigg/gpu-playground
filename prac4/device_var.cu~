@@ -1,0 +1,23 @@
+// -*- mode: c++; -*-
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <cuda_runtime.h>
+
+// device variable and kernel
+__device__ float d_test;
+__global__ void kernel1() { d_test = 1.0; }
+
+int main() {
+
+  // initialise variables
+  float h_test = 0.0;
+  cudaMemset(&d_test,0,sizeof(float));
+
+  // invoke kernel
+  kernel1 <<<1,1>>> ();
+
+  // Copy device variable to host and print
+  cudaMemcpyFromSymbol(&h_test, "d_test", sizeof(float), 0, cudaMemcpyDeviceToHost);
+  printf("%f\n",h_test);  
+}

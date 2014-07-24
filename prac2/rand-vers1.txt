@@ -1,0 +1,39 @@
+GPU Device 0: "Tesla M2090" with compute capability 2.0
+
+CURAND normal RNG  execution time (ms): 21.786943,  samples/sec: 8.812618e+07 
+random dz: 0.780974
+random dz: -0.737112
+random dz: -1.801578
+random dz: -0.280849
+random dz: -2.902097
+random dz: 0.563547
+random dz: -1.011333
+random dz: 1.501526
+random dz: 0.414039
+random dz: 1.458326
+random dz: 0.502787
+random dz: -0.562136
+random dz: -0.148576
+random dz: -0.700349
+random dz: -0.395185
+random dz: -0.004148
+random dz: -0.048168
+random dz: -0.529958
+random dz: 1.450197
+random dz: -1.189055
+random dz: 0.404758
+random dz: 0.489706
+random dz: 1.221632
+random dz: 0.499799
+random dz: 0.457925
+random dz: -0.751256
+random dz: -0.774908
+random dz: 1.388553
+random dz: 0.624958
+random dz: -0.730621
+random dz: 2.029238
+random dz: 0.320050
+Monte Carlo kernel execution time (ms): 1.276672 
+
+Average value and standard deviation of error  =          -nan          -nan
+
