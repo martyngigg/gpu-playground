@@ -11,6 +11,12 @@ namespace sandbox
 {
   using std::auto_ptr;
 
+  namespace
+  {
+    // Max value of X axis
+    DataType XMAX = 0.5*M_PI;
+  }
+
   /**
    * 2D "array" with nvecs sets of 1D vectors of size npts for Y & X
    * @param nvec Number of vectors
@@ -62,7 +68,7 @@ namespace sandbox
     for(size_t i = 0; i < nvec; ++i)
     {
       auto & dataX = wksp->dataX[i];
-      std::generate(dataX.begin(), dataX.end(), Linspace(2*M_PI, npts));
+      std::generate(dataX.begin(), dataX.end(), Linspace(XMAX, npts));
       auto & dataY = wksp->dataY[i];
       std::transform(dataX.begin(), dataX.end(), dataY.begin(), typedCos);
     }

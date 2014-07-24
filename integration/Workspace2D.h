@@ -14,10 +14,10 @@ namespace sandbox
 	//------------------------------------------------------------------------------
 	#ifdef DBL_DATA
 	  /// Datatype
-	  typedef float DataType;
+	  typedef double DataType;
 	#else
 	  /// Datatype
-	  typedef double DataType;
+	  typedef float DataType;
 	#endif
 
 	/// Array of data
