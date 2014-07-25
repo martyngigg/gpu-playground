@@ -2,25 +2,30 @@
 // Includes
 //-----------------------------------------------------------------------------
 #include <cstddef>
+#include <iostream>
+
+#include "Workspace2D.h"
 
 using std::size_t;
+using namespace sandbox;
 
 //-----------------------------------------------------------------------------
 // Forward declarations
 //-----------------------------------------------------------------------------
 namespace sandbox
 {
-  void integrate_on_cpu(const size_t, const size_t);
-  void integrate_with_cuda(const size_t, const size_t);
+  Workspace2DPtr integrate_with_cpu(const Workspace2DPtr & workspace);
+  Workspace2DPtr integrate_with_cuda(const Workspace2DPtr & workspace);
 }
 
 int main()
 {
-  using namespace sandbox;
-
   const size_t nvec(10000), npts(10000);
-  integrate_on_cpu(nvec, npts);
-  integrate_with_cuda(nvec, npts);
+  std::cout << "Start timing tests with nvec=" << nvec << ", npts=" << npts << "\n";
+  auto input = createCosineWorkspace(nvec, npts);
+
+  integrate_with_cpu(input);
+  integrate_with_cuda(input);
 }
 
 

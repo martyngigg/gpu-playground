@@ -1,11 +1,11 @@
 CC := gcc
 CXX := g++
-COMMONCXXFLAGS := -Wall -Wextra
+COMMONCXXFLAGS := -Wall -Wextra -fopenmp
 CXXFLAGS := $(COMMONCXXFLAGS) -std=c++0x
 NVCC := nvcc
 NVCCFLAGS := -lineinfo -arch=sm_20 --ptxas-options=-v --use_fast_math --compiler-options="$(COMMONCXXFLAGS)"
 INC	:= -I$(CUDA_HOME)/include -I.
-LIB	:= -L$(CUDA_HOME)/lib64 -lcudart
+LIB	:= -L$(CUDA_HOME)/lib64 -lcudart -lgomp
 
 CPPSRCS := $(wildcard *.cpp)
 CPPOBJS := $(patsubst %.cpp,%.o,$(CPPSRCS))

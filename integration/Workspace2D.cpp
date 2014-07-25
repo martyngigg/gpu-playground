@@ -9,8 +9,6 @@
 
 namespace sandbox
 {
-  using std::auto_ptr;
-
   namespace
   {
     // Max value of X axis
@@ -24,7 +22,8 @@ namespace sandbox
    */
   Workspace2D::Workspace2D(const size_t nvecs, const size_t npts) :
     dataY(nvecs, DataArray(npts, DataType())),
-    dataX(nvecs, DataArray(npts, DataType()))
+    dataX(nvecs, DataArray(npts, DataType())), nVectors(nvecs), 
+    nPts(npts)
   {
   }
 
@@ -58,13 +57,13 @@ namespace sandbox
    * @param nvec Number of vectors
    * @param nvec Number of pts in each vector
    */
-  std::auto_ptr<Workspace2D> createCosineWorkspace(const size_t nvec,
+  Workspace2DPtr createCosineWorkspace(const size_t nvec,
                                               const size_t npts)
   {
     using std::cos;
     auto *typedCos = (DataType (*)(DataType))cos;
 
-    auto wksp = auto_ptr<Workspace2D>(new Workspace2D(nvec, npts));
+    auto wksp = Workspace2DPtr(new Workspace2D(nvec, npts));
     for(size_t i = 0; i < nvec; ++i)
     {
       auto & dataX = wksp->dataX[i];
