@@ -1,3 +1,4 @@
+// -*- mode: c++; -*-
 //------------------------------------------------------------------------------
 // Includes
 //------------------------------------------------------------------------------
@@ -50,7 +51,7 @@ namespace sandbox
     cudaEventSynchronize(m_stop);
     float milli(0.0f);
     cudaEventElapsedTime(&milli, m_start, m_stop);
-    return milli;
+    return milli/1000.0f;
   }
 
   /// Explicitly reset the timer.

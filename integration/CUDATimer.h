@@ -1,3 +1,4 @@
+// -*- mode: c++; -*-
 #ifndef CUDATIMER_H_
 #define CUDATIMER_H_
 
